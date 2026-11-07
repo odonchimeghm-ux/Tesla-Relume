@@ -346,7 +346,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
    ========================================================= */
 .feature {
   display: flex;
-  height: 640px;
+  min-height: 640px;
 }
 .feature__content {
   flex: 0 0 50%;
@@ -687,7 +687,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
     --heading-2: 36px;
     --text-medium: 16px;
   }
-  .navbar__links { gap: 16px; overflow-x: auto; max-width: 100%; }
+  .navbar__links { flex-wrap: wrap; gap: 4px 16px; }
   .navbar__actions { gap: 8px; }
   .mega-menu__menu { flex-direction: column; padding-right: var(--page-padding); }
   .blog-item { gap: 16px; }
