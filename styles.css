@@ -941,7 +941,8 @@ sup { font-size: 0.65em; line-height: 0; }
   .split { padding: 24px; }
   .info-card__body,
   .info-card--text { padding: 24px; }
-  .tabs__list { align-self: stretch; }
+  .tabs__list { align-self: stretch; flex-wrap: wrap; width: 100%; }
+  .tabs__list:has(> .tabs__tab:nth-child(4)) { display: grid; grid-template-columns: 1fr 1fr; }
   .tabs__tab { flex: 1 1 0; padding: 8px 12px; }
   .variant__img { aspect-ratio: 16 / 9; }
   .variant__stats { flex-wrap: wrap; gap: 24px; }

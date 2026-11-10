@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model Y — Цахилгаан дунд оврын SUV | Tesla</title>
+  <meta name="description" content="Model Y — 7 хүртэлх суудалтай, 76 куб фут хүртэлх ачааны багтаамжтай, хэмнэлттэй цахилгаан дунд оврын SUV." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ Navbar / 5 ============ -->
+  <header class="navbar">
+    <div class="navbar__bar">
+      <div class="navbar__left">
+        <a href="index.html" class="logo" aria-label="Нүүр хуудас">
+          <img src="assets/tesla-logo.svg" alt="Tesla" width="120" height="13" />
+        </a>
+        <nav class="navbar__links" aria-label="Үндсэн цэс">
+          <a href="model3.html" class="navbar__link">Model 3</a>
+          <a href="modely.html" class="navbar__link" aria-current="page">Model Y</a>
+          <a href="#" class="navbar__link">Эрчим хүч</a>
+          <a href="#" class="navbar__link">Дэлгүүр</a>
+          <button type="button" class="navbar__link navbar__dropdown-toggle" aria-expanded="false" aria-controls="mega-menu">
+            Бусад
+            <img src="assets/chevron-down.svg" alt="" width="24" height="24" class="navbar__chevron" />
+          </button>
+        </nav>
+      </div>
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--secondary btn--sm">Захиалах</a>
+        <a href="#" class="btn btn--primary btn--sm">Цаг авах</a>
+      </div>
+    </div>
+
+    <!-- Mega Menu ("Бусад" цэснээс нээгдэнэ) -->
+    <div class="mega-menu" id="mega-menu" hidden>
+      <div class="mega-menu__menu">
+        <div class="mega-menu__group">
+          <p class="mega-menu__heading">Хуудасны бүлэг 1</p>
+          <ul class="mega-menu__list">
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Нэгдүгээр хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Хоёрдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Гуравдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Дөрөвдүгээр хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+          </ul>
+        </div>
+        <div class="mega-menu__group">
+          <p class="mega-menu__heading">Хуудасны бүлэг 2</p>
+          <ul class="mega-menu__list">
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Тавдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Зургадугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Долдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Наймдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mega-menu__blog">
+        <p class="mega-menu__heading">Блогоос онцлох</p>
+        <div class="blog-list">
+          <article class="blog-item">
+            <img src="assets/blog-thumb.png" alt="" class="blog-item__img" />
+            <div class="blog-item__content">
+              <div>
+                <h3 class="blog-item__title">Нийтлэлийн гарчиг</h3>
+                <p class="blog-item__text">Нийтлэлийн товч тайлбар энд байрлана</p>
+              </div>
+              <a href="#" class="blog-item__link">Цааш унших</a>
+            </div>
+          </article>
+          <article class="blog-item">
+            <img src="assets/blog-thumb.png" alt="" class="blog-item__img" />
+            <div class="blog-item__content">
+              <div>
+                <h3 class="blog-item__title">Нийтлэлийн гарчиг</h3>
+                <p class="blog-item__text">Нийтлэлийн товч тайлбар энд байрлана</p>
+              </div>
+              <a href="#" class="blog-item__link">Цааш унших</a>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="btn btn--link btn--link-sm">
+          Бүгдийг үзэх
+          <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <img src="assets/modely/hero.webp" alt="Нар жаргах үеийн цугларалтын дэргэд зогсож буй цагаан Model Y" class="hero__bg" />
+      <div class="hero__inner">
+        <h1 class="h1">Model Y</h1>
+        <p class="text-medium">Цахилгаан дунд оврын SUV. Жилийн 2.49% хүүтэй санхүүжилт боломжтой.</p>
+        <div class="actions">
+          <a href="#" class="btn btn--primary">Захиалах</a>
+          <a href="#specs" class="btn btn--secondary btn--on-dark">Загвар харьцуулах</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Meet Model Y (slider) ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Цахилгаан дунд оврын SUV</p>
+          <div class="section-title__content">
+            <h2 class="h2">Model Y-тэй танилцаарай</h2>
+            <p class="text-medium">Model Y бүрт стандартаар дагалддаг онцлогуудтай танилцаарай.</p>
+          </div>
+        </div>
+
+        <div class="slider" data-slider>
+          <div class="slider__track" data-slider-track>
+            <article class="meet-card">
+              <img src="assets/modely/meet-safety.webp" alt="" />
+              <h3 class="meet-card__title">Аюулгүй байдал</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/modely/meet-convenience.webp" alt="" />
+              <h3 class="meet-card__title">Тав тух</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/modely/meet-fsd.webp" alt="" />
+              <h3 class="meet-card__title">Бүрэн автомат жолоодлого (Хяналттай)</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/modely/meet-warranty.webp" alt="" />
+              <h3 class="meet-card__title">Баталгаат хугацаа</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/modely/meet-utility.webp" alt="" />
+              <h3 class="meet-card__title">Ачаа тээш</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/modely/meet-entertainment.webp" alt="" />
+              <h3 class="meet-card__title">Зугаа цэнгэл</h3>
+            </article>
+          </div>
+          <div class="slider__controls slider__controls--end">
+            <div class="slider__buttons">
+              <button type="button" class="slider__arrow" data-slider-prev aria-label="Өмнөх">
+                <img src="assets/arrow-back.svg" alt="" width="24" height="24" />
+              </button>
+              <button type="button" class="slider__arrow" data-slider-next aria-label="Дараах">
+                <img src="assets/arrow-forward.svg" alt="" width="24" height="24" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Explore Model Y (variant tabs) ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Model Y-г судлах</h2>
+          <p class="text-medium">Дөрвөн хувилбараас өөрт тохирохыг нь сонгоорой.</p>
+        </div>
+
+        <div class="card variant" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Model Y хувилбар">
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-standard" aria-controls="v-panel-standard" aria-selected="true">Model Y</button>
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-premium" aria-controls="v-panel-premium" aria-selected="false" tabindex="-1">Premium</button>
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-yl" aria-controls="v-panel-yl" aria-selected="false" tabindex="-1">Model Y L</button>
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-performance" aria-controls="v-panel-performance" aria-selected="false" tabindex="-1">Performance</button>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-standard" aria-labelledby="v-tab-standard">
+            <img src="assets/modely/variant-standard.webp" alt="Model Y" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model Y</h3>
+                <p>Арын хөтлөгчтэй</p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Явах зай (EPA тооцоо)</dt><dd class="variant-stat__value">321<span>миль</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Аюулгүй байдлын үнэлгээ<sup>3</sup></dt><dd class="variant-stat__value">5<span>од</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Ачааны багтаамж</dt><dd class="variant-stat__value">74<span>куб фут</span></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-premium" aria-labelledby="v-tab-premium" hidden>
+            <img src="assets/modely/variant-premium.webp" alt="Model Y Premium" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model Y Premium</h3>
+                <p>Хос мотор, бүх дугуйгаар хөтлөгчтэй</p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Явах зай (EPA тооцоо)</dt><dd class="variant-stat__value">327<span>миль</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">0-60 mph хурдатгал</dt><dd class="variant-stat__value">4.3<span>сек</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">15 минутын цэнэглэлтээр<sup>2</sup></dt><dd class="variant-stat__value">169<span>миль</span></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-yl" aria-labelledby="v-tab-yl" hidden>
+            <img src="assets/modely/variant-yl.webp" alt="Model Y L Premium" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model Y L Premium</h3>
+                <p>Урт тэнхлэгтэй · $61,990-оос эхэлнэ<sup>1</sup></p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Явах зай (EPA тооцоо)</dt><dd class="variant-stat__value">332<span>миль</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Суудал</dt><dd class="variant-stat__value">6</dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">15 минутын цэнэглэлтээр<sup>2</sup></dt><dd class="variant-stat__value">172<span>миль</span></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-performance" aria-labelledby="v-tab-performance" hidden>
+            <img src="assets/modely/variant-performance.webp" alt="Улаан Model Y Performance" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model Y Performance</h3>
+                <p>Хос мотор, бүх дугуйгаар хөтлөгчтэй</p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Явах зай (EPA тооцоо)</dt><dd class="variant-stat__value">306<span>миль</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">0-60 mph хурдатгал<sup>7</sup></dt><dd class="variant-stat__value">3.3<span>сек</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Дээд хурд</dt><dd class="variant-stat__value">155<span>mph</span></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a href="#" class="btn btn--primary">Захиалах</a>
+            <a href="#specs" class="btn btn--secondary">Үзүүлэлт харах</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Everything You Want ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Model Y</p>
+          <div class="section-title__content">
+            <h2 class="h2">Хүссэн бүхэн нэг дор</h2>
+            <p class="text-medium">Хэн ч, ямар ч аялалд. Тамирлаг хурц шугам, налуу дээвэр, агаарын эсэргүүцэл багатай шинэ хайлштай обуд нь давтагдашгүй хэмнэлтийг бий болгоно. Бага эрчим хүч зарцуулан илүү хол, илүү хурдан хүрээрэй.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Тав хүн суух</h3>
+            <p>Гэр бүл, найз нөхдөө дагуулаарай. Таван хүн хүртэл тав тухтай сууна.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Ачаагаа дүүргэ</h3>
+            <p>74 куб фут ачааны багтаамжид бүх хүний ачаа багтана. Хоёрдугаар эгнээний суудлыг хавтгай эвхэж дугуй, аяллын хэрэгсэл зэргийг ачаарай.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Тухлан суу</h3>
+            <p>Уудам дотор засал, халаалттай урд суудал, зөөлөн даавуун бүрээсээр тайван, тухтай зорчино.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Efficiency ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="card cta cta--tall">
+          <div class="cta__content">
+            <div class="section-title__content">
+              <h2 class="h2">Давтагдашгүй хэмнэлт</h2>
+              <p class="text-medium">Model Y бол АНУ-ын хамгийн хэмнэлттэй цахилгаан SUV.<sup>8</sup> Илүү өндөр хэмнэлт нь цаг хугацааны турш цэнэглэлтийн зардлыг бууруулна.</p>
+              <h3 class="info-card__title">Машинаас илүү</h3>
+              <p>Model Y-д зугаа цэнгэл бүрэн бий. Дуртай газартаа зогсоод 16 инчийн төв дэлгэцээр хөгжим, кино, тоглоом тоглуулаарай.<sup>9</sup> Camp Mode-ыг идэвхжүүлж, кино үзэх, амрах, хонох үедээ кабинаа тав тухтай байлгаарай.</p>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/efficiency.webp" alt="Намрын замаар явж буй цагаан Model Y" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Range ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="card cta cta--tall cta--reverse">
+          <div class="cta__content">
+            <div class="section-title">
+              <p class="tagline">Явах зай</p>
+              <div class="section-title__content">
+                <h2 class="h2">Танд хэрэгтэй бүх зай</h2>
+                <p class="text-medium">Нэг цэнэглэлтээр EPA тооцоогоор 321 миль хүртэл хаана ч хүрээрэй. Урт аялалд Trip Planner-ээр замаа төлөвлөхөд Tesla тань замдаа Supercharger-ийн зогсоолуудыг автоматаар нэмнэ.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/range.webp" alt="Model Y-ийн явах зай" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <div class="stat">
+            <p class="stat__number">15 мин</p>
+            <p class="stat__label">160 миль хүртэл цэнэглэнэ<sup>2</sup></p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">80,000+</p>
+            <p class="stat__label">Дэлхий даяарх Supercharger</p>
+          </div>
+          <div class="stat">
+            <p class="stat__number">99%</p>
+            <p class="stat__label">Supercharger-ийн ажиллах хугацаа</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ More Affordable Than a Gas Car ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="card cta cta--tall">
+          <div class="cta__content">
+            <div class="section-title__content">
+              <h2 class="h2">Бензин машинаас хямд</h2>
+              <p class="text-medium">Хаана ч хялбар, хямд цэнэглэхээс эхлээд маш бага засвар үйлчилгээ хүртэл — Model Y-г эзэмших нь ижил төстэй бензин машинаас ихэвчлэн хямд байдаг.</p>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/affordable.webp" alt="Model Y" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Цэнэглэлт хямд</h3>
+            <p>Цахилгаан ихэвчлэн бензинээс хямд. Шөнөжин гэртээ цэнэглэхэд хямд тарифаар цэнэглээд, өдрөө хангалттай зайтай эхлүүлээрэй.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Засвар үйлчилгээ бараг үгүй</h3>
+            <p>Тос солих, тохируулга хийх, утааны шалгалт шаардлагагүй. Зөвхөн шил угаагчийн шингэн нэмж, дугуйгаа сэлгэхэд л хангалттай.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Солих эд анги цөөн</h3>
+            <p>Бензин хөдөлгүүр 1,000 гаруй хөдөлгөөнт эд ангитай бол Tesla-гийн хөтлөгч систем 20 орчим. Хөдөлгөөнт эд анги цөөн байх нь засвар бага, найдвартай байдал өндөр гэсэн үг.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Remote Access ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Tesla апп</p>
+          <div class="section-title__content">
+            <h2 class="h2">Хэзээ ч алсаас хандах</h2>
+            <p class="text-medium">Утсаа түлхүүр болгон ашиглахаас гадна Tesla аппаар тээврийн хэрэгслээ урьдчилан бэлтгэх, нэвтрэх, хянах боломжтой.</p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat">
+            <h3 class="stat__label">Уур амьсгалаа тохируул</h3>
+            <p>Суухаасаа өмнө кабинаа халааж эсвэл сэрүүцүүлээрэй. Pet Mode-оор тэжээвэр амьтнаа, Camp Mode-оор машиндаа хонох үедээ кабинаа тухтай байлгаарай.</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat__label">Нэг товшилтоор түгжих</h3>
+            <p>Таныг байхгүй үед бусдад нэвтрэх эрх олгоорой.</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat__label">Бүгдийг хяналтдаа</h3>
+            <p>Sentry Mode-ыг идэвхжүүлж, хүнгүй үед тээврийн хэрэгслийнхээ эргэн тойрныг хянаарай.</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat__label">Цэнэгээ хянах</h3>
+            <p>Цэнэглэх хуваарь тохируулж, цэнэглэлтийг эхлүүлэх, зогсоох, явцыг нь хянаарай.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Premium ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Model Y Premium</p>
+          <div class="section-title__content">
+            <h2 class="h2">Нарийн урласан гадна төрх</h2>
+            <p class="text-medium">Гадна төрхийн өнцөг бүрийг гоо зүй, аэродинамикийг бодолцон нарийн нямбай зохион бүтээсэн.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Цэвэрхэн шугам</h3>
+            <p>Урд хэсгийн гөлгөр, цэвэрхэн шугамууд нь хүчирхэг урд төрхийг бүрдүүлнэ.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Зөөлөн явалт</h3>
+            <p>Түдгэлзүүр, обуд, дугуй хамтдаа зөөлөн явалтыг бий болгоно. Идэвхтэй болон идэвхгүй дуу намжуулалт кабиныг шивнэх мэт нам гүм байлгана.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Өвөрмөц гэрэлтүүлэг</h3>
+            <p>Машины өргөнийг бүхэлд нь хамарсан ганц арын гэрэл нь их биеийн хавтангаас шууд бусаар ойх төрлөөрөө анхдагч юм.</p>
+          </article>
+        </div>
+
+        <div class="card cta cta--tall">
+          <div class="cta__content">
+            <div class="section-title__content">
+              <h2 class="h2">Дээд зэргийн тав тух</h2>
+              <p class="text-medium">Бүтэн шилэн дээвэр бүхий уудам кабинд долоо хүртэл хүн<sup>4</sup> тав тухтай сууна. Өндөр зэрэглэлийн материал, дэвшилтэт онцлог, хүрээлсэн орчны гэрэлтүүлэг нь бүрэн дүрэлзсэн орчныг бүтээнэ.</p>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/hero-premium.webp" alt="Model Y Premium" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Аль ч суудлаас тав тух</h3>
+            <p>Урд, хойд мэдрэгчит дэлгэцээр уур амьсгал, зугаа цэнгэлийн тохиргоонд хялбар хандана. HEPA шүүлтүүр агаарын чанарыг сайжруулна. Эхний хоёр эгнээнд цахилгаан налуулагч, халаалттай суудал, бүх зорчигчид зөөлөн даавуун бүрээс.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Бүрэн дүрэлзсэн дуу</h3>
+            <p>Хаалгаа хаахад тусгай дуу тусгаарлагч шил гайхалтай нам гүмийг бэлэглэнэ. Дуртай дуугаа тоглуулж, кабинаа өөрийн хувийн дуу бичлэгийн студи болгоорой.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Бүрэн холбогдсон</h3>
+            <p>Дуудлага тод, дата хурдан. Ойртоход хаалга, тээш нээгдэнэ. Bluetooth нь танд болон зорчигчдод зугаа цэнгэлийг тасралтгүй хүргэнэ.</p>
+          </article>
+        </div>
+
+        <div class="card split">
+          <div class="split__item">
+            <h2 class="h2">Уудам ачааны багтаамж</h2>
+          </div>
+          <div class="split__item">
+            <p class="text-medium">76 куб фут ачааны багтаамжид долоо хүртэл хүн<sup>4</sup> болон тэдний авчрах бүх зүйл багтана. Гар чөлөөтэй тээш ойртоход автоматаар нээгдэж, цүнх, хүнс, спортын хэрэгслээ хялбар ачна. Хоёр, гуравдугаар эгнээний суудлыг<sup>4</sup> хавтгай эвхэж нэмэлт зай гаргаарай.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Performance ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="card cta cta--tall cta--reverse">
+          <div class="cta__content">
+            <div class="section-title">
+              <p class="tagline">Model Y Performance</p>
+              <div class="section-title__content">
+                <h2 class="h2">Дээд зэргийн адреналин</h2>
+                <p class="text-medium">Model Y Performance нь таны жолоодлогын хэв маяг, хурд, замын нөхцөлд дасан зохицож, явалтыг зөөлөн, зүрхний цохилтыг тань өндөр байлгана.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/hero-performance.webp" alt="Model Y Performance" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Илүү гүйцэтгэл</h3>
+            <p>Хурдтай давхих зуураа хяналтаа алдахгүй. Явах эд ангийн хүрээ, дугуйн байрлал нь огцом эргэлт, урт тойруулгад Model Y Performance-ийг мэдрэмтгий байлгана.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Илүү их эрчим хүч</h3>
+            <p>Шинэчилсэн батерейн элементүүд илүү их эрчим хүч хуримтлуулж, нэг цэнэглэлтээр EPA тооцоогоор 306 миль хүртэл замыг туулна.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Дасан зохицох түдгэлзүүр</h3>
+            <p>Зам болон таны жолоодлогоос хамаарч өөрчлөгддөг түдгэлзүүрийн ачаар өндөр хурдад ч, бартаатай замд ч тогтвортой байна.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Жинхэнэ хяналт</h3>
+            <p>Обуд, дугуй, тоормосны суппорт дээд зэргийн мэдрэмжтэй зохион бүтээгдсэн тул бараг ямар ч нөхцөлд жолооны хүрдээ илүү нарийн удирдана.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Хэт аэродинамик</h3>
+            <p>Шинэчилсэн урд, хойд бампер, шинэ нүүрстөрөгчийн спойлер. Арын спойлерыг уртасгаснаар өндөр хурдад эсэргүүцэл багасч, замдаа наалдсан мэдрэмж төрүүлнэ.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Гар урлалын дотор засал</h3>
+            <p>Халаалт, агааржуулалттай спорт суудал, хаалга болон самбарт нүүрстөрөгчийн эслэг, 16 инчийн шинэчилсэн дэлгэц, хоёрдугаар эгнээнд 8 инчийн дэлгэц.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Model Y L ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="card cta cta--tall">
+          <div class="cta__content">
+            <div class="section-title">
+              <p class="tagline">Model Y L Premium · Урт тэнхлэг</p>
+              <div class="section-title__content">
+                <h2 class="h2">Нямбай сонгосон бүхэн</h2>
+                <p class="text-medium">Гурван уудам эгнээ, гараар урласан өндөр зэрэглэлийн даавуу, маш нам гүм, олон зориулалттай кабин, 89 куб фут<sup>10</sup> хүртэлх ачааны багтаамжаар тав тух, багтаамжийг дээд зэргээр хангана.</p>
+              </div>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/hero-yl.webp" alt="Model Y L Premium" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Дээд зэргийн тав тух</h3>
+            <p>Толгой, хөлийн зай, тав тухыг дээд зэргээр хангана. Хоёрдугаар эгнээний ахмад суудал цахилгаан гарын түшлэг, нэг товчоор эвхэгдэх, агааржуулалт, халаалттай. Гуравдугаар эгнээ цахилгаан налуулагч, халаалттай.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Уудам, уян хатан дотор засал</h3>
+            <p>Уртасгасан тэнхлэг нь хөлийн зай эсвэл ачааны зайг сонгох боломж олгоно. Урд, хоёрдугаар эгнээний мэдрэгчит дэлгэц, дуут удирдлагад зориулсан нэмэлт микрофонтой.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Тайван, нам гүм явалт</h3>
+            <p>Дуу тусгаарлагч шил, шинэчилсэн түдгэлзүүр, дугуй нь замын чимээг багасгана. 18 чанга яригч, 1 сабвуфертай Tesla Audio системээр дуртай дуугаа сонсоорой.</p>
+          </article>
+        </div>
+
+        <div class="card cta cta--tall cta--reverse">
+          <div class="cta__content">
+            <div class="section-title__content">
+              <h2 class="h2">Гоолиг, боловсронгуй</h2>
+              <p>Урт тэнхлэг, боловсронгуй явах эд анги нь хоёр, гуравдугаар эгнээний зорчигчдод суух, буухад хялбар болгоно. Цахилгаан удирдлагатай амортизатор замын нөхцөлд дасан зохицож, тусгайлан тааруулсан түдгэлзүүр арын эгнээнд нэмэлт тав тух өгнө.</p>
+              <h3 class="info-card__title">Шингэсэн хэмнэлт</h3>
+              <p>Уртасгасан дээвэр, боловсронгуй их бие нь агаарын урсгалыг сайжруулж, хэмнэлт, явах зайг нэмэгдүүлнэ. Арын спойлер өндөр хурдад өргөлтийг бууруулна.</p>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/yl-sleek.webp" alt="Model Y L-ийн хажуу төрх" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Safety ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="card cta cta--tall">
+          <div class="cta__content">
+            <div class="section-title">
+              <p class="tagline">Аюулгүй байдал</p>
+              <div class="section-title__content">
+                <h2 class="h2">Таны аюулгүй байдлын төлөө</h2>
+                <p>Tesla-д аюулгүй байдал хамгийн чухал. Tesla-гийн тээврийн хэрэгсэл бүр цохилтыг шингээх бүс, зорчигчийн тасалгаанд гэмтэл нэвтрэхийг багасгах хатуу бүтэц, зорчигчдыг хамгаалах олон аюулгүйн дэртэй.</p>
+                <p>Идэвхтэй аюулгүй байдлын системүүд мөргөлдөөний хүчийг бууруулах, эсвэл ослоос бүрэн сэргийлэхэд тусална. Урд мөргөлдөөний сэрэмжлүүлэг, Идэвхтэй яаралтай тоормос, Эгнээнээс гарахаас сэргийлэх систем стандартаар дагалдана.</p>
+                <p>Шалан доор байрласан батерей хүндийн төвийг намсгаж, онхолдох эрсдэлийг бууруулна. Model Y L-д гурван эгнээ бүгд аюулгүйн дэртэй.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--link">
+                Дэлгэрэнгүй
+                <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+              </a>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/modely/safety.webp" alt="Model Y-ийн аюулгүй байдал" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Autonomous ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <div class="section-title__content">
+            <h2 class="h2">Аяллын ирээдүй бол автономит</h2>
+            <p class="text-medium">Саад ойртох үед ажилладаг Автомат яаралтай тоормос, эгнээндээ байлгах Эгнээнээс гарахаас сэргийлэх систем зэрэг идэвхтэй аюулгүй байдлын онцлогтой. Бүрэн автомат жолоодлого (Хяналттай)-д шилжиж илүү олон боломжийг нээгээрэй.</p>
+          </div>
+          <div class="actions">
+            <a href="#" class="btn btn--secondary">Туршилт товлох</a>
+            <a href="#" class="btn btn--link">
+              Дэлгэрэнгүй
+              <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Бүрэн автомат жолоодлого (Хяналттай)</h3>
+            <p>Таны идэвхтэй хяналт дор илүү идэвхтэй чиглүүлэлт, туслалцаатай жолоодлого үзүүлэх жолоочийн туслах дэвшилтэт системүүдийн цогц.<sup>5</sup></p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Урд талын камер</h3>
+            <p>Илүү аюулгүй, зогсоолд хялбар байрлах, Actually Smart Summon зэрэг жолоочийн туслах онцлогуудад зориулсан сайжруулсан харагдах байдал.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Сохор бүсийн хяналт</h3>
+            <p>Гэрэлтэх сэрэмжлүүлэг болон дэлгэц дээрх дүрслэл нь эргэн тойрноо аюулгүй шалгахад тусална.</p>
+          </article>
+        </div>
+
+        <div class="card split">
+          <div class="split__item">
+            <p class="tagline">Powershare</p>
+            <h2 class="h2">Хаана ч эрчим хүч</h2>
+            <p class="text-medium">Тээврийн хэрэгслээ зөөврийн цахилгаан станц болгоорой. Батерей болон Tesla Outlet Adapter-аар гэрэл, зөөврийн компьютер, хөргөгч, халаагуур, цахилгаан багаж зэргийг тэжээнэ.</p>
+          </div>
+          <div class="split__item">
+            <h3 class="info-card__title">Хуваалцахад хүрэлцэх эрчим хүч</h3>
+            <p>Өрөөний халаагуур, цахилгаан дугуй, цахилгаан багаж зэрэг бусад төхөөрөмжийг тэжээгээрэй.<sup>6</sup> Powerwall 3-тай бол тээврийн хэрэгслийн батерейд хуримтлагдсан эрчим хүчээр гэрийнхээ нөөц цахилгааны хугацааг уртасгах боломжтой.</p>
+            <a href="#" class="btn btn--link">
+              Дэлгэрэнгүй
+              <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Specs ============ -->
+    <section class="section" id="specs">
+      <div class="container">
+        <div class="specs" data-tabs>
+          <div class="specs__head">
+            <h2 class="h2">Техникийн үзүүлэлт</h2>
+            <div class="tabs__list" role="tablist" aria-label="Үзүүлэлтийн хувилбар">
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-standard" aria-controls="s-panel-standard" aria-selected="true">Model Y</button>
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-premium" aria-controls="s-panel-premium" aria-selected="false" tabindex="-1">Premium</button>
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-yl" aria-controls="s-panel-yl" aria-selected="false" tabindex="-1">Model Y L</button>
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-performance" aria-controls="s-panel-performance" aria-selected="false" tabindex="-1">Performance</button>
+            </div>
+          </div>
+
+          <!-- Model Y (RWD) -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-standard" aria-labelledby="s-tab-standard">
+            <img src="assets/modely/specs-standard.webp" alt="Model Y-ийн хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>321 миль</dd></div>
+                  <div><dt>Хурдатгал</dt><dd>0-60 mph 6.8 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Арын хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>4,061 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>74 куб фут</dd></div>
+                  <div><dt>Обуд</dt><dd>18" эсвэл 19"</dd></div>
+                  <div><dt>Суудал</dt><dd>5 суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>6.4"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 78"<br />Толь дэлгэсэн: 83.8"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>63.8"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>188.7"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>225 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд</dt><dd>15 минутад 160 миль хүртэл<sup>2</sup></dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 100,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Y Premium (AWD) -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-premium" aria-labelledby="s-tab-premium" hidden>
+            <img src="assets/modely/specs-premium.webp" alt="Model Y Premium-ийн хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>327 миль</dd></div>
+                  <div><dt>Хурдатгал</dt><dd>0-60 mph 4.3 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Хос мотор, бүх дугуйгаар хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>4,473 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>76 куб фут</dd></div>
+                  <div><dt>Обуд</dt><dd>19" эсвэл 20"</dd></div>
+                  <div><dt>Суудал</dt><dd>7 хүртэл суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц<br />8" арын мэдрэгчит дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>6.6"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 78.0"<br />Толь дэлгэсэн: 83.8"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>63.9"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>188.6"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>250 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд</dt><dd>15 минутад 169 миль хүртэл<sup>2</sup></dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 120,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Y L Premium -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-yl" aria-labelledby="s-tab-yl" hidden>
+            <img src="assets/modely/specs-yl.webp" alt="Model Y L Premium-ийн хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>332 миль</dd></div>
+                  <div><dt>Хурдатгал</dt><dd>0-60 mph 4.4 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Хос мотор, бүх дугуйгаар хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>4,612 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>89 куб фут<sup>10</sup></dd></div>
+                  <div><dt>Обуд</dt><dd>19" эсвэл 20"</dd></div>
+                  <div><dt>Суудал</dt><dd>6 хүртэл суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц<br />8" хоёрдугаар эгнээний дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>6.7"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 78"<br />Толь дэлгэсэн: 83.8"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>65.7"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>195.6"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>250 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд</dt><dd>15 минутад 172 миль хүртэл<sup>2</sup></dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 120,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model Y Performance -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-performance" aria-labelledby="s-tab-performance" hidden>
+            <img src="assets/modely/specs-performance.webp" alt="Model Y Performance-ийн хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>306 миль</dd></div>
+                  <div><dt>Хурдатгал<sup>7</sup></dt><dd>0-60 mph 3.3 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Хос мотор, бүх дугуйгаар хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>4,466 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>76 куб фут</dd></div>
+                  <div><dt>Обуд</dt><dd>21"</dd></div>
+                  <div><dt>Суудал</dt><dd>5 суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц<br />8" арын мэдрэгчит дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>6"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 78.0"<br />Толь дэлгэсэн: 83.8"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>63.4"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>188.8"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>250 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд<sup>2</sup></dt><dd>15 минутад 144 миль хүртэл</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 120,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a href="#" class="btn btn--primary">Захиалах</a>
+            <a href="#" class="btn btn--link btn--link-light">
+              Загваруудыг харьцуулах
+              <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Footnotes ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="footnotes">
+          <p>Тээврийн хэрэгслийг зөвхөн жишээ болгон харуулав. Бодит загвар өөр байж болно. Үнэ, үзүүлэлтийг АНУ-ын Tesla.com-оос авсан болно.</p>
+          <p><sup>1</sup> Үнэд хүргэлт, захиалгын хураамж, татвар болон бусад төлбөр ороогүй бөгөөд өөрчлөгдөж болно. Model Y L Premium-ийн хүргэлт, захиалгын хураамжийг оруулсан (татвар ороогүй) эхлэх үнэ $63,630.</p>
+          <p><sup>2</sup> 15 минутад нэмэгдэх зайг 65 mph тогтмол хурдтай хурдны зам дээрх тээврийн хэрэгслийн үр ашигт үндэслэн тооцсон. Бодит явах зай болон цэнэглэлтийн гүйцэтгэл Supercharger-ийн төрөл, тохиргоо, цэнэгийн түвшин, батерейн температур, хурд, цаг агаар, өндрийн өөрчлөлт зэрэг олон хүчин зүйлээс хамаарна.</p>
+          <p><sup>3</sup> Засгийн газрын 5 одны аюулгүй байдлын үнэлгээ нь АНУ-ын Үндэсний хурдны замын хөдөлгөөний аюулгүй байдлын газрын (NHTSA) Шинэ машины үнэлгээний хөтөлбөрийн нэг хэсэг.</p>
+          <p><sup>4</sup> Зөвхөн долоон суудалтай тохиргоотой Model Y Premium бүх дугуйгаар хөтлөгчтэй хувилбарт боломжтой.</p>
+          <p><sup>5</sup> Бүрэн автомат жолоодлого (Хяналттай) нь жолоочоос үргэлж анхаарал сэрэмжтэй байхыг шаарддаг бөгөөд тээврийн хэрэгслийг бүрэн автономит болгодоггүй.</p>
+          <p><sup>6</sup> Тоног төхөөрөмжийг тусад нь худалдана.</p>
+          <p><sup>7</sup> Эхний 1 фут хөдөлгөөнийг (rollout) хассан үзүүлэлт.</p>
+          <p><sup>8</sup> 2026 оны 3-р сарын 25-ны байдлаарх 2026 оны загварын EPA MPGe-д үндэслэв (18 инчийн обудтай 2026 Model Y RWD).</p>
+          <p><sup>9</sup> Гуравдагч талын захиалга шаардлагатай байж болно.</p>
+          <p><sup>10</sup> Дунд болон арын суудлыг хавтгай эвхсэн үеийн ачааны дээд багтаамж.</p>
+          <p>Газрын зураг, навигаци, дуут тушаал зэрэг их дата ашигладаг зарим онцлог нь дор хаяж Standard Connectivity шаарддаг. Үүрэн холбооны дата болон гуравдагч талын лиценз ашигладаг онцлогуудын хүртээмж өөрчлөгдөж болно.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ End CTA ============ -->
+    <section class="hero hero--end">
+      <img src="assets/modely/end.webp" alt="" class="hero__bg" />
+      <div class="hero__inner">
+        <h2 class="h1">Model Y</h2>
+        <p class="text-medium">Өөрийн Model Y-гээ зохион бүтээгээрэй.</p>
+        <div class="actions">
+          <a href="#" class="btn btn--primary">Өөрийнхөөрөө бүтээх</a>
+          <a href="#" class="btn btn--secondary btn--on-dark">Туршилт товлох</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer / 7 ============ -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo" aria-label="Нүүр хуудас">
+          <img src="assets/tesla-logo.svg" alt="Tesla" width="120" height="13" />
+        </a>
+        <nav class="footer__links" aria-label="Доод цэс">
+          <a href="model3.html">Model 3</a>
+          <a href="modely.html">Model Y</a>
+          <a href="#">Эрчим хүч</a>
+          <a href="#">Цэнэглэлт</a>
+          <a href="#">Танилцах</a>
+          <a href="#">Дэлгүүр</a>
+        </nav>
+      </div>
+      <div class="footer__credits">
+        <img src="assets/divider.svg" alt="" class="footer__divider" />
+        <div class="footer__row">
+          <p>Tesla © 2026</p>
+          <div class="footer__legal">
+            <a href="#">Нууцлалын бодлого</a>
+            <a href="#">Үйлчилгээний нөхцөл</a>
+            <a href="#">Күүки тохиргоо</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
