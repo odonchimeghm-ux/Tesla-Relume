@@ -52,3 +52,29 @@ document.querySelectorAll("[data-slider]").forEach((slider) => {
   window.addEventListener("resize", update);
   update();
 });
+
+// ---------- Tabs ----------
+document.querySelectorAll("[data-tabs]").forEach((tabs) => {
+  const buttons = Array.from(tabs.querySelectorAll('[role="tab"]'));
+
+  const select = (active) => {
+    buttons.forEach((btn) => {
+      const on = btn === active;
+      btn.setAttribute("aria-selected", String(on));
+      btn.tabIndex = on ? 0 : -1;
+      document.getElementById(btn.getAttribute("aria-controls")).hidden = !on;
+    });
+  };
+
+  buttons.forEach((btn, i) => {
+    btn.addEventListener("click", () => select(btn));
+    btn.addEventListener("keydown", (e) => {
+      const dir = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+      if (!dir) return;
+      e.preventDefault();
+      const target = buttons[(i + dir + buttons.length) % buttons.length];
+      target.focus();
+      select(target);
+    });
+  });
+});

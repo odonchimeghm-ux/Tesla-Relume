@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Model 3 — Спорт цахилгаан седан | Tesla</title>
+  <meta name="description" content="Model 3 — хурдан хурдатгал, хол явах зай, бага зардалтай, дунд оврын цахилгаан седан." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ Navbar / 5 ============ -->
+  <header class="navbar">
+    <div class="navbar__bar">
+      <div class="navbar__left">
+        <a href="index.html" class="logo" aria-label="Нүүр хуудас">
+          <img src="assets/logo-wide.svg" alt="Лого" width="70" height="36" />
+        </a>
+        <nav class="navbar__links" aria-label="Үндсэн цэс">
+          <a href="#" class="navbar__link">Тээврийн хэрэгсэл</a>
+          <a href="#" class="navbar__link">Эрчим хүч</a>
+          <a href="#" class="navbar__link">Дэлгүүр</a>
+          <button type="button" class="navbar__link navbar__dropdown-toggle" aria-expanded="false" aria-controls="mega-menu">
+            Бусад
+            <img src="assets/chevron-down.svg" alt="" width="24" height="24" class="navbar__chevron" />
+          </button>
+        </nav>
+      </div>
+      <div class="navbar__actions">
+        <a href="#" class="btn btn--secondary btn--sm">Захиалах</a>
+        <a href="#" class="btn btn--primary btn--sm">Цаг авах</a>
+      </div>
+    </div>
+
+    <!-- Mega Menu ("Бусад" цэснээс нээгдэнэ) -->
+    <div class="mega-menu" id="mega-menu" hidden>
+      <div class="mega-menu__menu">
+        <div class="mega-menu__group">
+          <p class="mega-menu__heading">Хуудасны бүлэг 1</p>
+          <ul class="mega-menu__list">
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Нэгдүгээр хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Хоёрдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Гуравдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Дөрөвдүгээр хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+          </ul>
+        </div>
+        <div class="mega-menu__group">
+          <p class="mega-menu__heading">Хуудасны бүлэг 2</p>
+          <ul class="mega-menu__list">
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Тавдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Зургадугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Долдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+            <li><a href="#" class="menu-item"><img src="assets/relume-icon.svg" alt="" width="24" height="24" /><span><strong>Наймдугаар хуудас</strong><span>Хуудасны товч тайлбар энд байрлана</span></span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mega-menu__blog">
+        <p class="mega-menu__heading">Блогоос онцлох</p>
+        <div class="blog-list">
+          <article class="blog-item">
+            <img src="assets/blog-thumb.png" alt="" class="blog-item__img" />
+            <div class="blog-item__content">
+              <div>
+                <h3 class="blog-item__title">Нийтлэлийн гарчиг</h3>
+                <p class="blog-item__text">Нийтлэлийн товч тайлбар энд байрлана</p>
+              </div>
+              <a href="#" class="blog-item__link">Цааш унших</a>
+            </div>
+          </article>
+          <article class="blog-item">
+            <img src="assets/blog-thumb.png" alt="" class="blog-item__img" />
+            <div class="blog-item__content">
+              <div>
+                <h3 class="blog-item__title">Нийтлэлийн гарчиг</h3>
+                <p class="blog-item__text">Нийтлэлийн товч тайлбар энд байрлана</p>
+              </div>
+              <a href="#" class="blog-item__link">Цааш унших</a>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="btn btn--link btn--link-sm">
+          Бүгдийг үзэх
+          <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero">
+      <img src="assets/model3/hero.webp" alt="Уулын замаар давхиж буй цагаан Model 3" class="hero__bg" />
+      <div class="hero__inner">
+        <h1 class="h1">Model 3</h1>
+        <p class="text-medium">Сард $439-өөс эхлэн түрээслэх боломжтой</p>
+        <div class="actions">
+          <a href="#" class="btn btn--primary">Захиалах</a>
+          <a href="#specs" class="btn btn--secondary btn--on-dark">Загвар харьцуулах</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Meet Model 3 (slider) ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Спорт седан</p>
+          <div class="section-title__content">
+            <h2 class="h2">Model 3-тай танилцаарай</h2>
+            <p class="text-medium">Model 3 бүрт стандартаар дагалддаг онцлогуудтай танилцаарай.</p>
+          </div>
+        </div>
+
+        <div class="slider" data-slider>
+          <div class="slider__track" data-slider-track>
+            <article class="meet-card">
+              <img src="assets/model3/meet-convenience.webp" alt="" />
+              <h3 class="meet-card__title">Тав тух</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/model3/meet-safety.webp" alt="" />
+              <h3 class="meet-card__title">Аюулгүй байдал</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/model3/meet-fsd.webp" alt="" />
+              <h3 class="meet-card__title">Бүрэн автомат жолоодлого (Хяналттай)</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/model3/meet-warranty.webp" alt="" />
+              <h3 class="meet-card__title">Баталгаат хугацаа</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/model3/meet-efficiency.webp" alt="" />
+              <h3 class="meet-card__title">Хэмнэлттэй</h3>
+            </article>
+            <article class="meet-card">
+              <img src="assets/model3/meet-design.webp" alt="" />
+              <h3 class="meet-card__title">Дизайн</h3>
+            </article>
+          </div>
+          <div class="slider__controls slider__controls--end">
+            <div class="slider__buttons">
+              <button type="button" class="slider__arrow" data-slider-prev aria-label="Өмнөх">
+                <img src="assets/arrow-back.svg" alt="" width="24" height="24" />
+              </button>
+              <button type="button" class="slider__arrow" data-slider-next aria-label="Дараах">
+                <img src="assets/arrow-forward.svg" alt="" width="24" height="24" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Explore Model 3 (variant tabs) ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <h2 class="h2">Model 3-ыг судлах</h2>
+          <p class="text-medium">Гурван хувилбараас өөрт тохирохыг нь сонгоорой.</p>
+        </div>
+
+        <div class="card variant" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Model 3 хувилбар">
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-standard" aria-controls="v-panel-standard" aria-selected="true">Model 3</button>
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-premium" aria-controls="v-panel-premium" aria-selected="false" tabindex="-1">Premium</button>
+            <button type="button" class="tabs__tab" role="tab" id="v-tab-performance" aria-controls="v-panel-performance" aria-selected="false" tabindex="-1">Performance</button>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-standard" aria-labelledby="v-tab-standard">
+            <img src="assets/model3/variant-standard.webp" alt="Model 3" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model 3</h3>
+                <p>$36,990-оос эхэлнэ</p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Явах зай (EPA тооцоо)</dt><dd class="variant-stat__value">321<span>миль</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">0-60 mph хурдатгал</dt><dd class="variant-stat__value">5.8<span>сек</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Ачааны багтаамж</dt><dd class="variant-stat__value">24<span>куб фут</span></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-premium" aria-labelledby="v-tab-premium" hidden>
+            <img src="assets/model3/variant-premium.webp" alt="Model 3 Premium" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model 3 Premium</h3>
+                <p>$42,490-оос эхэлнэ</p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Явах зай (EPA тооцоо)</dt><dd class="variant-stat__value">346<span>миль</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">185 миль хүртэл цэнэглэнэ<sup>1</sup></dt><dd class="variant-stat__value">15<span>мин</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Хос мотор</dt><dd class="variant-stat__value">AWD</dd></div>
+              </dl>
+            </div>
+            <p class="variant__note">Бүх дугуйгаар хөтлөгчтэй (AWD) хувилбарын үзүүлэлтийг харуулав.</p>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="v-panel-performance" aria-labelledby="v-tab-performance" hidden>
+            <img src="assets/model3/variant-performance.webp" alt="Model 3 Performance" class="variant__img" />
+            <div class="variant__body">
+              <div class="variant__info">
+                <h3 class="variant__name">Model 3 Performance</h3>
+                <p>$54,990-оос эхэлнэ</p>
+              </div>
+              <dl class="variant__stats">
+                <div class="variant-stat"><dt class="variant-stat__label">Оргил хүч</dt><dd class="variant-stat__value">528<span>м.х.</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">0-60 mph хурдатгал<sup>4</sup></dt><dd class="variant-stat__value">2.9<span>сек</span></dd></div>
+                <div class="variant-stat"><dt class="variant-stat__label">Дээд хурд</dt><dd class="variant-stat__value">163<span>mph</span></dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a href="#" class="btn btn--primary">Захиалах</a>
+            <a href="#specs" class="btn btn--secondary">Үзүүлэлт харах</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Our Most Affordable ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="card cta cta--tall">
+          <div class="cta__content">
+            <div class="section-title__content">
+              <h2 class="h2">Хамгийн хүртээмжтэй үнэ</h2>
+              <p class="text-medium">Шилдэг бүх онцлогийг хамгийн хямд үнэтэй, цаг хугацааны турш эзэмших зардал нь хамгийн бага тээврийн хэрэгсэлдээ шингээв.</p>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--primary">Захиалах</a>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/model3/affordable.webp" alt="Ойн дэргэд ачааны тээшээ нээсэн цагаан Model 3" />
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card">
+            <img src="assets/model3/affordable-1.webp" alt="" class="info-card__img" />
+            <div class="info-card__body">
+              <h3 class="info-card__title">Төвлөрсөн дизайн</h3>
+              <p>Жолоодлогын тав тух, найдвартай байдлыг нэгдүгээрт тавьж, минималист дизайныг сонгосноор чанараа алдалгүй үнийг бага байлгадаг.</p>
+            </div>
+          </article>
+          <article class="card info-card">
+            <img src="assets/model3/affordable-2.webp" alt="" class="info-card__img" />
+            <div class="info-card__body">
+              <h3 class="info-card__title">Хэмнэлттэй жолоодлого</h3>
+              <p>Цэнэглэх нь бензин хийлгэхээс ихэвчлэн хямд байдаг. Model 3 нь цэнэг бүрийг аль болох удаан хүргэж, явах зайг дээд зэргээр нэмэгдүүлэхээр бүтээгдсэн.</p>
+            </div>
+          </article>
+          <article class="card info-card">
+            <img src="assets/model3/affordable-3.webp" alt="" class="info-card__img" />
+            <div class="info-card__body">
+              <h3 class="info-card__title">Бага засвар үйлчилгээ</h3>
+              <p>Tesla-гийн тээврийн хэрэгсэл бензин хөдөлгүүрийн оронд цахилгаан мотортой. Энэ нь жил бүрийн засвар үйлчилгээний хэрэгцээг багасгадаг.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ More Than the Basics (interior) ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Дотор засал</p>
+          <div class="section-title__content">
+            <h2 class="h2">Үндсэн хэрэгцээнээс илүү</h2>
+            <p class="text-medium">Цэвэрхэн, нарийн нямбай дотор засал танд хэрэгтэй бүхнийг кабин дотроо агуулна.</p>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="card cta cta--tall">
+            <div class="cta__content">
+              <div class="section-title__content">
+                <h3 class="h2">Тав тухтай зорчих</h3>
+                <p class="text-medium">Урд эгнээний халаалттай даавуун суудал, халаалттай жолооны хүрдтэй. Кабин бүхэлдээ өндөр зэрэглэлийн материалаар өнгөлөгдсөн.</p>
+              </div>
+            </div>
+            <div class="cta__media">
+              <img src="assets/model3/comfort.webp" alt="Model 3-ын урд суудал" />
+            </div>
+          </div>
+
+          <div class="card cta cta--tall cta--reverse">
+            <div class="cta__content">
+              <div class="section-title__content">
+                <h3 class="h2">Бүх зүйл таны хяналтад</h3>
+                <p class="text-medium">Суудлын байрлалаа мэдрэгчит дэлгэцээр тохируулна. Эргэлтийн дохионы бариул стандартаар дагалдана.</p>
+              </div>
+            </div>
+            <div class="cta__media">
+              <img src="assets/model3/control.webp" alt="Model 3-ын мэдрэгчит дэлгэц болон жолооны хүрд" />
+            </div>
+          </div>
+
+          <div class="card cta cta--tall">
+            <div class="cta__content">
+              <div class="section-title__content">
+                <h3 class="h2">Чих тавин сонс</h3>
+                <p class="text-medium">Долоон чанга яригчаас бүрдсэн стандарт аудио системтэй. Дуут туслахаар дуу, жагсаалт болон бусад зүйлийг хүсээрэй.</p>
+              </div>
+            </div>
+            <div class="cta__media">
+              <img src="assets/model3/audio.webp" alt="Model 3-ын аудио систем" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Always Connected ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Tesla апп</p>
+          <div class="section-title__content">
+            <h2 class="h2">Үргэлж холбогдсон</h2>
+            <p class="text-medium">Tesla аппаар дамжуулан тээврийн хэрэгслээ хаанаас ч хянаж, удирдаарай.</p>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat">
+            <h3 class="stat__label">Алсын уур амьсгалын удирдлага</h3>
+            <p>Явахаасаа өмнө кабины температураа тохируулж, тав тухтай орчинд суугаарай.</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat__label">Утасны түлхүүр</h3>
+            <p>Түлхүүрээ мартах асуудал байхгүй. Утасны түлхүүрээр ойртоход л нээгдэх, эсвэл алсаас түгжиж, нээгээрэй.</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat__label">Тэжээвэр амьтны горим</h3>
+            <p>Таныг байхгүй үед хамтрагч амьтныг тань аюулгүй, дулаахан байлгана.</p>
+          </div>
+          <div class="stat">
+            <h3 class="stat__label">Харуулын горим</h3>
+            <p>Тээврийн хэрэгсэл хүнгүй байх үед эргэн тойрныг нь хянана.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Safety ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="card cta cta--tall cta--reverse">
+          <div class="cta__content">
+            <div class="section-title">
+              <p class="tagline">Аюулгүй байдал</p>
+              <div class="section-title__content">
+                <h2 class="h2">Таны аюулгүй байдлын төлөө</h2>
+                <p>Tesla-д аюулгүй байдал хамгийн чухал. Тээврийн хэрэгсэл бүр цохилтыг шингээх бүс, зорчигчийн тасалгаанд гэмтэл нэвтрэхийг багасгах хатуу бүтэц, зорчигчдыг хамгаалах олон аюулгүйн дэртэй.</p>
+                <p>Идэвхтэй аюулгүй байдлын системүүд мөргөлдөөний хүчийг бууруулах, эсвэл ослоос бүрэн сэргийлэхэд тусална. Урд мөргөлдөөний сэрэмжлүүлэг, Идэвхтэй яаралтай тоормос, Эгнээнээс гарахаас сэргийлэх систем стандартаар дагалдана.</p>
+                <p>Идэвхгүй болон идэвхтэй хамгаалалтын системүүд нь гэмтэх магадлалыг маш бага байлгаж, манай тээврийн хэрэгслийг дэлхийн хамгийн аюулгүйд тооцогдохуйц болгосон.</p>
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" class="btn btn--link">
+                Дэлгэрэнгүй
+                <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+              </a>
+            </div>
+          </div>
+          <div class="cta__media">
+            <img src="assets/model3/safety.webp" alt="Model 3-ын аюулгүй байдлын бүтэц" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Autonomous ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <div class="section-title__content">
+            <h2 class="h2">Аяллын ирээдүй бол автономит</h2>
+            <p class="text-medium">Саад ойртох үед ажилладаг Автомат яаралтай тоормос, эгнээндээ байлгах Эгнээнээс гарахаас сэргийлэх систем зэрэг идэвхтэй аюулгүй байдлын онцлогтой. Бүрэн автомат жолоодлого (Хяналттай)-д шилжиж илүү олон боломжийг нээгээрэй.</p>
+          </div>
+          <div class="actions">
+            <a href="index.html" class="btn btn--secondary">Туршилт товлох</a>
+            <a href="#" class="btn btn--link">
+              Дэлгэрэнгүй
+              <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Бүрэн автомат жолоодлого (Хяналттай)</h3>
+            <p>Таны идэвхтэй хяналт дор илүү идэвхтэй чиглүүлэлт, туслалцаатай жолоодлого үзүүлэх жолоочийн туслах дэвшилтэт системүүдийн цогц.<sup>2</sup></p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Урд талын камер</h3>
+            <p>Илүү аюулгүй, зогсоолд хялбар байрлах, Actually Smart Summon зэрэг жолоочийн туслах онцлогуудад зориулсан сайжруулсан харагдах байдал.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Сохор бүсийн хяналт</h3>
+            <p>Гэрэлтэх сэрэмжлүүлэг болон дэлгэц дээрх дүрслэл нь эргэн тойрноо аюулгүй шалгахад тусална.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Power Anywhere ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="card split">
+          <div class="split__item">
+            <p class="tagline">Powershare</p>
+            <h2 class="h2">Хаана ч эрчим хүч</h2>
+            <p class="text-medium">Тээврийн хэрэгслээ зөөврийн цахилгаан станц болгоорой. Тээврийн хэрэгслийн батерей болон Tesla Outlet Adapter-аар гэрэл, зөөврийн компьютер зэрэг төхөөрөмж, хөргөгч, халаагуур, цахилгаан багаж зэрэг хэрэгслийг тэжээнэ.</p>
+          </div>
+          <div class="split__item">
+            <h3 class="info-card__title">Хуваалцахад хүрэлцэх эрчим хүч</h3>
+            <p>Тээврийн хэрэгслийн батерей болон Tesla Outlet Adapter-аар өрөөний халаагуур, цахилгаан дугуй, цахилгаан багаж зэрэг бусад төхөөрөмжийг тэжээгээрэй.<sup>3</sup> Powerwall 3-тай бол тээврийн хэрэгслийн батерейд хуримтлагдсан эрчим хүчээр гэрийнхээ нөөц цахилгааны хугацааг уртасгах боломжтой.</p>
+            <a href="#" class="btn btn--link">
+              Дэлгэрэнгүй
+              <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Premium highlights ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Model 3 Premium</p>
+          <div class="section-title__content">
+            <h2 class="h2">Хол замд зориулав</h2>
+            <p class="text-medium">Агаарын эсэргүүцлийг дээд зэргээр бууруулахаар шинэчилсэн гадна загвартайгаар нэг цэнэглэлтээр 363 миль (EPA тооцоо) хүртэл замыг туулна.</p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Минималист дотор засал</h3>
+            <p>Таныг бүрхэн хүрээлэх загвар. Орчны гэрэлтүүлгийг өөрийнхөөрөө тохируулаарай.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Өндөр зэрэглэлийн материал</h3>
+            <p>Илүү зөөлөн, илүү боловсронгуй материалыг өндөр нарийвчлалтайгаар гүйцэтгэсэн.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Гайхалтай дуугаралт</h3>
+            <p>Tesla-гийн бүтээсэн 15 чанга яригч, хос сабвуфер, хос өсгөгчтэй аудио системээр бүрэн дүрэлзсэн дууг мэдэр.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Арын дэлгэц</h3>
+            <p>Арын зорчигчид уур амьсгалын удирдлага, зугаа цэнгэл бүхий 8 инчийн мэдрэгчит дэлгэцтэй.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Агааржуулалттай суудал</h3>
+            <p>Урд суудлынхаа агааржуулалтыг утаснаасаа урьдчилан асаах, эсвэл уур амьсгалын тохиргоотой хамт автоматаар ажиллуулаарай.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Утасгүй цэнэглэгч</h3>
+            <p>Хоёр утсыг зэрэг цэнэглэж, сайжруулсан микрофоны ачаар тод дуудлага хийгээрэй.</p>
+          </article>
+        </div>
+
+        <div class="card cta">
+          <div class="cta__content">
+            <div class="section-title__content">
+              <h3 class="h2">Нам гүм кабин</h3>
+              <p class="text-medium">360 градусын дуу тусгаарлагч шилний ачаар шивнэх мэт нам гүм кабин. Хор хөнөөлтэй хэт ягаан туяанаас хамгаалахын зэрэгцээ гэрэл нэвтрүүлэх бүтэн шилэн дээвэр дороос тэнгэрийг ширтээрэй.</p>
+            </div>
+          </div>
+          <div class="cta__content cta__content--stats">
+            <div class="stat">
+              <p class="stat__number">363</p>
+              <p class="stat__label">миль хүртэлх явах зай (EPA тооцоо)</p>
+            </div>
+            <div class="stat">
+              <p class="stat__number">195</p>
+              <p class="stat__label">миль — 15 минутын Supercharger цэнэглэлтээр<sup>1</sup></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Performance highlights ============ -->
+    <section class="section">
+      <div class="container container--gap-80">
+        <div class="section-title section-title--narrow">
+          <p class="tagline">Model 3 Performance</p>
+          <div class="section-title__content">
+            <h2 class="h2">Дараагийн түвшний гүйцэтгэл</h2>
+            <p class="text-medium">Model 3-д суурилуулж байсан хамгийн хүчирхэг, шинэ үеийн Performance хөтлөгч нэгж нь 500 гаруй морины хүч өгч, 0-60 mph хурдыг ердөө 2.9 секундэд хүрэх боломж олгоно.<sup>4</sup></p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Маш мэдрэмтгий удирдлага</h3>
+            <p>Дасан зохицох чийгшүүлэгч систем нь Model 3 Performance-ийг замд тогтвортой байлгаж, ямар ч хурдтай эргэлтийг бүрэн хяналт, тав тухтайгаар давахад тусална.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Track Mode</h3>
+            <p>Дасан зохицох түдгэлзүүр, явах эд анги, хөтлөгч системийг тохируулж жолоодлогын хяналтыг нэмэгдүүлнэ. Тойруулгын зам дээр тэнцвэр, тогтворжуулалт, нөхөн сэргээх тоормосыг хүссэнээрээ тааруулаарай.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Дэвшилтэт аэродинамик</h3>
+            <p>Урд, хойд бампер, арын диффузор болон нүүрстөрөгчийн эслэг спойлер хамтдаа өндөр хурдад агаарын эсэргүүцлийг бууруулж, өргөлтийн тэнцвэрийг сайжруулна.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Цутгамал Performance обуд</h3>
+            <p>Хөнгөн, урд хойноо ялгаатай хэмжээтэй обуд нь эргэлтэд орох хариуг хурцалж, эргэлтээс гарах зүтгэлийг сайжруулахын зэрэгцээ явах зай, тав тухад оновчлогдсон.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Performance тоормос</h3>
+            <p>Том хэмжээний тоормосны диск, суппорт болон өндөр гүйцэтгэлийн наклад нь ямар ч хурдад илүү хүчтэй, тогтвортой зогсолт өгнө.</p>
+          </article>
+          <article class="card info-card info-card--text">
+            <h3 class="info-card__title">Performance явах эд анги</h3>
+            <p>Тусгай пүрш, амортизатор, втулка, тогтворжуулагч нь дээд зэргийн тав тухтай, илүү чадварлаг явах эд ангийг бүрдүүлнэ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Specs ============ -->
+    <section class="section" id="specs">
+      <div class="container">
+        <div class="specs" data-tabs>
+          <div class="specs__head">
+            <h2 class="h2">Техникийн үзүүлэлт</h2>
+            <div class="tabs__list" role="tablist" aria-label="Үзүүлэлтийн хувилбар">
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-standard" aria-controls="s-panel-standard" aria-selected="true">Model 3</button>
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-premium" aria-controls="s-panel-premium" aria-selected="false" tabindex="-1">Premium</button>
+              <button type="button" class="tabs__tab" role="tab" id="s-tab-performance" aria-controls="s-panel-performance" aria-selected="false" tabindex="-1">Performance</button>
+            </div>
+          </div>
+
+          <!-- Model 3 (RWD) -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-standard" aria-labelledby="s-tab-standard">
+            <img src="assets/model3/specs-standard.webp" alt="Model 3-ын хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>321 миль</dd></div>
+                  <div><dt>Хурдатгал</dt><dd>0-60 mph 5.8 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Арын хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>3,759 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>24 куб фут</dd></div>
+                  <div><dt>Обуд</dt><dd>18" эсвэл 19"</dd></div>
+                  <div><dt>Суудал</dt><dd>5 суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>5.4"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 76.1"<br />Толь дэлгэсэн: 82.2"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>56.7"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>185.8"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>225 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд</dt><dd>15 минутад 170 миль хүртэл<sup>1</sup></dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 100,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model 3 Premium (AWD) -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-premium" aria-labelledby="s-tab-premium" hidden>
+            <img src="assets/model3/specs-premium.webp" alt="Model 3 Premium-ийн хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>346 миль</dd></div>
+                  <div><dt>Хурдатгал</dt><dd>0-60 mph 3.8 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Хос мотор, бүх дугуйгаар хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>4,030 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>24 куб фут</dd></div>
+                  <div><dt>Обуд</dt><dd>18" эсвэл 19"</dd></div>
+                  <div><dt>Суудал</dt><dd>5 суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц<br />8" арын мэдрэгчит дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>5.4"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 76.1"<br />Толь дэлгэсэн: 82.2"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>56.7"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>185.8"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>250 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд</dt><dd>15 минутад 185 миль хүртэл<sup>1</sup></dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 120,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <!-- Model 3 Performance -->
+          <div class="tabs__panel" role="tabpanel" id="s-panel-performance" aria-labelledby="s-tab-performance" hidden>
+            <img src="assets/model3/specs-performance.webp" alt="Model 3 Performance-ийн хэмжээсийн зураг" class="specs__img" />
+            <div class="specs__grid">
+              <div class="spec-group">
+                <h3>Хөтлөгч</h3>
+                <dl>
+                  <div><dt>Явах зай (EPA тооцоо)</dt><dd>316 миль</dd></div>
+                  <div><dt>Хурдатгал<sup>4</sup></dt><dd>0-60 mph 2.9 сек</dd></div>
+                  <div><dt>Хөтлөгч</dt><dd>Хос мотор, бүх дугуйгаар хөтлөгчтэй</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Хэмжээс</h3>
+                <dl>
+                  <div><dt>Жин (хоосон)</dt><dd>4,054 фунт</dd></div>
+                  <div><dt>Ачааны багтаамж</dt><dd>24 куб фут</dd></div>
+                  <div><dt>Обуд</dt><dd>20" Warp обуд</dd></div>
+                  <div><dt>Суудал</dt><dd>5 суудал</dd></div>
+                  <div><dt>Дэлгэц</dt><dd>16" төв мэдрэгчит дэлгэц<br />8" арын мэдрэгчит дэлгэц</dd></div>
+                  <div><dt>Газраас өндөр</dt><dd>5.0"</dd></div>
+                  <div><dt>Нийт өргөн</dt><dd>Толь эвхсэн: 76.1"<br />Толь дэлгэсэн: 82.2"</dd></div>
+                  <div><dt>Нийт өндөр</dt><dd>56.3"</dd></div>
+                  <div><dt>Нийт урт</dt><dd>185.9"</dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Цэнэглэлт</h3>
+                <dl>
+                  <div><dt>Supercharging дээд хүч / Төлбөр</dt><dd>250 кВт; Хэрэглэсэн хэмжээгээр</dd></div>
+                  <div><dt>Цэнэглэх хурд</dt><dd>15 минутад 147 миль хүртэл<sup>1</sup></dd></div>
+                </dl>
+              </div>
+              <div class="spec-group">
+                <h3>Баталгаа</h3>
+                <dl>
+                  <div><dt>Үндсэн баталгаа</dt><dd>4 жил эсвэл 50,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                  <div><dt>Батерей ба хөтлөгч нэгж</dt><dd>8 жил эсвэл 120,000 миль (аль түрүүлж хүрсэн нь)</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <a href="#" class="btn btn--primary">Захиалах</a>
+            <a href="#" class="btn btn--link btn--link-light">
+              Эзэмшигчийн гарын авлага
+              <img src="assets/chevron-right.svg" alt="" width="24" height="24" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Footnotes ============ -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="footnotes">
+          <p>Тээврийн хэрэгслийг зөвхөн жишээ болгон харуулав. Бодит загвар өөр байж болно. Үнэ, үзүүлэлтийг АНУ-ын Tesla.com-оос авсан болно.</p>
+          <p><sup>1</sup> 15 минутад нэмэгдэх зайг 65 mph тогтмол хурдтай хурдны зам дээрх тээврийн хэрэгслийн үр ашигт үндэслэн тооцсон. Бодит явах зай болон цэнэглэлтийн гүйцэтгэл Supercharger-ийн төрөл, тохиргоо, цэнэгийн түвшин, батерейн температур, хурд, цаг агаар, өндрийн өөрчлөлт зэрэг олон хүчин зүйлээс хамаарна.</p>
+          <p><sup>2</sup> Бүрэн автомат жолоодлого (Хяналттай) нь жолоочоос үргэлж анхаарал сэрэмжтэй байхыг шаарддаг бөгөөд тээврийн хэрэгслийг бүрэн автономит болгодоггүй.</p>
+          <p><sup>3</sup> Тоног төхөөрөмжийг тусад нь худалдана.</p>
+          <p><sup>4</sup> Эхний 1 фут хөдөлгөөнийг (rollout) хассан үзүүлэлт.</p>
+          <p>Газрын зураг, навигаци, дуут тушаал зэрэг их дата ашигладаг зарим онцлог нь дор хаяж Standard Connectivity шаарддаг. Үүрэн холбооны дата болон гуравдагч талын лиценз ашигладаг онцлогуудын хүртээмж өөрчлөгдөж болно.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ End CTA ============ -->
+    <section class="hero hero--end">
+      <img src="assets/model3/end.webp" alt="" class="hero__bg" />
+      <div class="hero__inner">
+        <h2 class="h1">Model 3</h2>
+        <p class="text-medium">Өөрийн Model 3-аа зохион бүтээгээрэй.</p>
+        <div class="actions">
+          <a href="#" class="btn btn--primary">Өөрийнхөөрөө бүтээх</a>
+          <a href="#" class="btn btn--secondary btn--on-dark">Туршилт товлох</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer / 7 ============ -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="index.html" class="logo" aria-label="Нүүр хуудас">
+          <img src="assets/logo-wide.svg" alt="Лого" width="70" height="36" />
+        </a>
+        <nav class="footer__links" aria-label="Доод цэс">
+          <a href="#">Тээврийн хэрэгсэл</a>
+          <a href="#">Эрчим хүч</a>
+          <a href="#">Цэнэглэлт</a>
+          <a href="#">Танилцах</a>
+          <a href="#">Дэлгүүр</a>
+        </nav>
+      </div>
+      <div class="footer__credits">
+        <img src="assets/divider.svg" alt="" class="footer__divider" />
+        <div class="footer__row">
+          <p>Tesla © 2026</p>
+          <div class="footer__legal">
+            <a href="#">Нууцлалын бодлого</a>
+            <a href="#">Үйлчилгээний нөхцөл</a>
+            <a href="#">Күүки тохиргоо</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
