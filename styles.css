@@ -188,10 +188,11 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 84px;
   height: 36px;
   flex-shrink: 0;
 }
+.logo img { width: 120px; height: auto; }
+.navbar__link[aria-current="page"] { font-weight: 600; }
 .navbar__links {
   display: flex;
   align-items: center;
