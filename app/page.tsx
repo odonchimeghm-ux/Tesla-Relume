@@ -10,9 +10,15 @@ import { Button } from "@/components/ui/Button";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Slider } from "@/components/ui/Slider";
-import { gallery, modelCards } from "@/data/home";
+import { gallery } from "@/data/home";
+import { getModelCards } from "@/lib/modelCards";
 
-export default function HomePage() {
+// Supabase-ийн өгөгдлийг 60 секунд тутам шинэчилнэ (ISR); админ хадгалахад шууд шинэчлэгдэнэ
+export const revalidate = 60;
+
+export default async function HomePage() {
+  const modelCards = await getModelCards();
+
   return (
     <>
       <Hero
