@@ -27,15 +27,18 @@ export function SectionTitle({
   narrow = false,
   className,
 }: SectionTitleProps) {
+  // Gestalt — Proximity: tagline↔гарчиг 12px < гарчиг↔тайлбар 16/24px < текст↔товч 32px
   return (
-    <div className={cn("flex flex-col", narrow ? "max-w-[768px] gap-6" : "gap-4", className)}>
-      {tagline && <p className="font-semibold">{tagline}</p>}
-      <div className="flex flex-col gap-6">
-        <Heading className="text-h2">{title}</Heading>
+    <div className={cn("flex flex-col", narrow && "max-w-[768px]", className)}>
+      <div className={cn("flex flex-col", narrow ? "gap-6" : "gap-4")}>
+        <div className="flex flex-col gap-3">
+          {tagline && <p className="font-semibold">{tagline}</p>}
+          <Heading className="text-h2">{title}</Heading>
+        </div>
         {description && <p className="text-medium">{description}</p>}
         {children}
       </div>
-      {actions}
+      {actions && <div className="mt-8">{actions}</div>}
     </div>
   );
 }

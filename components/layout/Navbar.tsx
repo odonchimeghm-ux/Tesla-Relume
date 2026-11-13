@@ -46,7 +46,8 @@ export function Navbar() {
   return (
     <header className="relative z-10 border-b border-border bg-background">
       <div className="flex min-h-[72px] items-center justify-between gap-4 px-page max-lg:flex-wrap max-lg:py-3">
-        <div className="flex items-center gap-6 max-lg:flex-wrap max-lg:gap-y-2">
+        {/* Proximity: лого↔цэс (48/32px) нь цэсний холбоос хоорондын зайнаас (32/24px) их */}
+        <div className="flex items-center gap-12 max-lg:flex-wrap max-lg:gap-x-8 max-lg:gap-y-2">
           <Logo />
           <nav
             aria-label="Үндсэн цэс"

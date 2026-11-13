@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ChargeSection } from "@/components/home/ChargeSection";
 import { FeatureSection } from "@/components/home/FeatureSection";
-import { StatsSection } from "@/components/home/StatsSection";
 import { CtaCard } from "@/components/sections/CtaCard";
 import { Hero } from "@/components/sections/Hero";
 import { ModelCard } from "@/components/sections/ModelCard";
@@ -74,8 +73,6 @@ export default async function HomePage() {
       </Section>
 
       <ChargeSection />
-
-      <StatsSection />
 
       <Section stack>
         <SectionTitle

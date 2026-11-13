@@ -152,7 +152,7 @@ export const sectionInventory = [
   { name: "SpecsSection", file: "sections/SpecsSection.tsx", pages: "Model 3, Model Y", note: "Бараан (specs) дэвсгэртэй, tone=\"dark\" Tabs. #specs холбоосоор хүрнэ." },
   { name: "SplitCard", file: "sections/SplitCard.tsx", pages: "Model 3, Model Y", note: "Хоёр баганат текст карт (Powershare)." },
   { name: "Footnotes", file: "sections/Footnotes.tsx", pages: "Model 3, Model Y", note: "Дугаарласан зүүлт тайлбар, text-small." },
-  { name: "FeatureSection · ChargeSection · StatsSection", file: "home/*.tsx", pages: "Нүүр", note: "Нүүр хуудасны тусгай хэсгүүд." },
+  { name: "FeatureSection · ChargeSection", file: "home/*.tsx", pages: "Нүүр", note: "Нүүр хуудасны тусгай хэсгүүд." },
   { name: "Navbar · MegaMenu", file: "layout/Navbar.tsx", pages: "Бүх хуудас", note: "Hairline-тай саарал header, \"Бусад\" дарахад mega menu нээгдэнэ." },
   { name: "Footer", file: "layout/Footer.tsx", pages: "Бүх хуудас", note: "Төвлөрсөн лого, холбоосууд, hairline, хуулийн холбоос." },
 ];
