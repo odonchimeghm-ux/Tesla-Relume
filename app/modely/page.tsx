@@ -14,13 +14,13 @@ import { CardGrid } from "@/components/ui/CardGrid";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Slider } from "@/components/ui/Slider";
+import { getMeetCards } from "@/lib/meetCards";
 import {
   affordableCards,
   appFeatures,
   autonomousCards,
   everythingCards,
   footnotes,
-  meetCards,
   performanceCards,
   premiumComfortCards,
   premiumExteriorCards,
@@ -37,7 +37,12 @@ export const metadata: Metadata = {
     "Model Y — 7 хүртэлх суудалтай, 76 куб фут хүртэлх ачааны багтаамжтай, хэмнэлттэй цахилгаан дунд оврын SUV.",
 };
 
-export default function ModelYPage() {
+// Supabase-ийн өгөгдлийг 60 секунд тутам шинэчилнэ (ISR)
+export const revalidate = 60;
+
+export default async function ModelYPage() {
+  const meetCards = await getMeetCards("modely");
+
   return (
     <>
       <Hero

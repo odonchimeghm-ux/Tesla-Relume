@@ -14,13 +14,13 @@ import { CardGrid } from "@/components/ui/CardGrid";
 import { Section } from "@/components/ui/Section";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { Slider } from "@/components/ui/Slider";
+import { getMeetCards } from "@/lib/meetCards";
 import {
   affordableCards,
   appFeatures,
   autonomousCards,
   footnotes,
   interiorFeatures,
-  meetCards,
   performanceCards,
   premiumCards,
   premiumStats,
@@ -34,7 +34,12 @@ export const metadata: Metadata = {
   description: "Model 3 — хурдан хурдатгал, хол явах зай, бага зардалтай, дунд оврын цахилгаан седан.",
 };
 
-export default function Model3Page() {
+// Supabase-ийн өгөгдлийг 60 секунд тутам шинэчилнэ (ISR)
+export const revalidate = 60;
+
+export default async function Model3Page() {
+  const meetCards = await getMeetCards("model3");
+
   return (
     <>
       <Hero
