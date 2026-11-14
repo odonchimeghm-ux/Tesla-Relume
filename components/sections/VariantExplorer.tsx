@@ -1,7 +1,9 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { OrderButton } from "@/components/order/OrderButton";
 import { Actions } from "@/components/ui/Actions";
 import { Tabs } from "@/components/ui/Tabs";
+import type { OrderableModel } from "@/data/products";
 
 export type VariantData = {
   id: string;
@@ -17,19 +19,21 @@ export type VariantData = {
 
 type VariantExplorerProps = {
   ariaLabel: string;
+  /** "Захиалах" товч энэ загварын сонгогдсон хувилбарыг Byl-ээр захиална */
+  model: OrderableModel;
   variants: VariantData[];
-  actions: ReactNode;
+  /** "Захиалах"-ын хажууд харагдах нэмэлт товчнууд */
+  secondaryActions?: ReactNode;
 };
 
-/** Хувилбаруудыг tab-аар сольж харуулах карт */
-export function VariantExplorer({ ariaLabel, variants, actions }: VariantExplorerProps) {
+/** Хувилбаруудыг tab-аар сольж харуулах карт. Panel бүр өөрийн хувилбарын "Захиалах" товчтой. */
+export function VariantExplorer({ ariaLabel, model, variants, secondaryActions }: VariantExplorerProps) {
   return (
     <Tabs
       idPrefix="variant"
       ariaLabel={ariaLabel}
       className="flex flex-col gap-8 overflow-hidden rounded-lg bg-foreground p-12 max-md:p-6"
       panelClassName="flex flex-col gap-8"
-      footer={<Actions>{actions}</Actions>}
       items={variants.map((v) => ({
         id: v.id,
         label: v.tab,
@@ -56,6 +60,10 @@ export function VariantExplorer({ ariaLabel, variants, actions }: VariantExplore
               </dl>
             </div>
             {v.note && <p className="text-small opacity-70">{v.note}</p>}
+            <Actions className="items-start">
+              <OrderButton model={model} variant={v.id} />
+              {secondaryActions}
+            </Actions>
           </>
         ),
       }))}

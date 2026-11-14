@@ -23,6 +23,24 @@ const variants: Record<ButtonVariant, string> = {
   link: "group border-0 text-ink",
 };
 
+/** Товчны class-ууд — `<button>` (жш: form submit) дээр ч ижил харагдуулахад ашиглана */
+export function buttonClassName({
+  variant = "primary",
+  size = "md",
+  light = false,
+  className,
+}: Pick<ButtonProps, "variant" | "size" | "light" | "className"> = {}) {
+  const isLink = variant === "link";
+  const padding = isLink ? (size === "sm" ? "py-1" : "p-0") : size === "sm" ? "px-5 py-2" : "px-6 py-2.5";
+  return cn(
+    "focus-ring inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-button border border-transparent text-regular font-medium transition-colors duration-200",
+    padding,
+    variants[variant],
+    isLink && light && "text-white",
+    className,
+  );
+}
+
 export function Button({
   href,
   variant = "primary",
@@ -32,18 +50,11 @@ export function Button({
   children,
 }: ButtonProps) {
   const isLink = variant === "link";
-  const padding = isLink ? (size === "sm" ? "py-1" : "p-0") : size === "sm" ? "px-5 py-2" : "px-6 py-2.5";
 
   return (
     <Link
       href={href}
-      className={cn(
-        "focus-ring inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-button border border-transparent text-regular font-medium transition-colors duration-200",
-        padding,
-        variants[variant],
-        isLink && light && "text-white",
-        className,
-      )}
+      className={buttonClassName({ variant, size, light, className })}
     >
       {children}
       {isLink && (

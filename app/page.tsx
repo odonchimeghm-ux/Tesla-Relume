@@ -26,7 +26,7 @@ export default async function HomePage() {
         description="Цахилгаан спорт седан. Нэг цэнэглэлтээр 363 миль хүртэл."
         actions={
           <>
-            <Button href="#">Захиалах</Button>
+            <Button href="/model3#variants">Захиалах</Button>
             <Button href="#" variant="secondary">
               Цаг авах
             </Button>

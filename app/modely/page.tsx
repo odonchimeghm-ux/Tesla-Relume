@@ -52,7 +52,7 @@ export default async function ModelYPage() {
         description="Цахилгаан дунд оврын SUV. Жилийн 2.49% хүүтэй санхүүжилт боломжтой."
         actions={
           <>
-            <Button href="#">Захиалах</Button>
+            <Button href="#variants">Захиалах</Button>
             <Button href="#specs" variant="on-dark">
               Загвар харьцуулах
             </Button>
@@ -76,18 +76,16 @@ export default async function ModelYPage() {
       </Section>
 
       {/* Хувилбарууд */}
-      <Section stack>
+      <Section id="variants" stack>
         <SectionTitle narrow title="Model Y-г судлах" description="Дөрвөн хувилбараас өөрт тохирохыг нь сонгоорой." />
         <VariantExplorer
           ariaLabel="Model Y хувилбар"
+          model="modely"
           variants={variants}
-          actions={
-            <>
-              <Button href="#">Захиалах</Button>
-              <Button href="#specs" variant="secondary">
-                Үзүүлэлт харах
-              </Button>
-            </>
+          secondaryActions={
+            <Button href="#specs" variant="secondary">
+              Үзүүлэлт харах
+            </Button>
           }
         />
       </Section>
@@ -341,7 +339,7 @@ export default async function ModelYPage() {
         variants={specs}
         actions={
           <>
-            <Button href="#">Захиалах</Button>
+            <Button href="#variants">Захиалах</Button>
             <Button href="#" variant="link" light>
               Загваруудыг харьцуулах
             </Button>

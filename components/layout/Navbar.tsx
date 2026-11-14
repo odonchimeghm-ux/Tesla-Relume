@@ -87,7 +87,8 @@ export function Navbar() {
         </div>
         {/* Similarity: "Захиалах" нь бүх хуудсанд primary, "Цаг авах" нь secondary — Hero-той ижил */}
         <div className="flex items-center gap-4 max-md:gap-2">
-          <Button href="#" variant="primary" size="sm">
+          {/* Хувилбар сонгох хэсэг рүү — тэндээс Byl-ээр төлнө */}
+          <Button href={pathname === "/modely" ? "/modely#variants" : "/model3#variants"} variant="primary" size="sm">
             Захиалах
           </Button>
           <Button href="#" variant="secondary" size="sm">

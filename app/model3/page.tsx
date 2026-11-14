@@ -49,7 +49,7 @@ export default async function Model3Page() {
         description="Сард $439-өөс эхлэн түрээслэх боломжтой"
         actions={
           <>
-            <Button href="#">Захиалах</Button>
+            <Button href="#variants">Захиалах</Button>
             <Button href="#specs" variant="on-dark">
               Загвар харьцуулах
             </Button>
@@ -73,18 +73,16 @@ export default async function Model3Page() {
       </Section>
 
       {/* Хувилбарууд */}
-      <Section stack>
+      <Section id="variants" stack>
         <SectionTitle narrow title="Model 3-ыг судлах" description="Гурван хувилбараас өөрт тохирохыг нь сонгоорой." />
         <VariantExplorer
           ariaLabel="Model 3 хувилбар"
+          model="model3"
           variants={variants}
-          actions={
-            <>
-              <Button href="#">Захиалах</Button>
-              <Button href="#specs" variant="secondary">
-                Үзүүлэлт харах
-              </Button>
-            </>
+          secondaryActions={
+            <Button href="#specs" variant="secondary">
+              Үзүүлэлт харах
+            </Button>
           }
         />
       </Section>
@@ -101,7 +99,7 @@ export default async function Model3Page() {
               description="Шилдэг бүх онцлогийг хамгийн хямд үнэтэй, цаг хугацааны турш эзэмших зардал нь хамгийн бага тээврийн хэрэгсэлдээ шингээв."
             />
             <Actions>
-              <Button href="#">Захиалах</Button>
+              <Button href="#variants">Захиалах</Button>
             </Actions>
           </CtaCard>
           <CardGrid>
@@ -261,7 +259,7 @@ export default async function Model3Page() {
         variants={specs}
         actions={
           <>
-            <Button href="#">Захиалах</Button>
+            <Button href="#variants">Захиалах</Button>
             <Button href="#" variant="link" light>
               Эзэмшигчийн гарын авлага
             </Button>
