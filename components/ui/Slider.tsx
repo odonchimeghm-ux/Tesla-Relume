@@ -55,8 +55,9 @@ export function Slider({ children, dots = false, spacing = "md", className }: Sl
       </div>
 
       <div className={cn("flex items-center", dots ? "justify-between" : "justify-end")}>
+        {/* Uniform Connectedness: тусдаа цэгүүдийн оронд нэг шугамд холбогдсон хэсгүүд — бүгд нэг слайдерынх */}
         {dots && (
-          <div className="flex gap-2">
+          <div className="flex items-center">
             {Array.from({ length: metrics.maxIndex + 1 }, (_, i) => (
               <button
                 key={i}
@@ -64,11 +65,17 @@ export function Slider({ children, dots = false, spacing = "md", className }: Sl
                 aria-label={`${i + 1}-р слайд`}
                 aria-current={i === current}
                 onClick={() => goTo(i)}
-                className={cn(
-                  "focus-ring size-2 rounded-full bg-ink transition-opacity",
-                  i === current ? "opacity-100" : "opacity-20",
-                )}
-              />
+                className="focus-ring group/seg py-3"
+              >
+                <span
+                  className={cn(
+                    "block h-1 w-8 transition-colors duration-200 max-md:w-6",
+                    i === 0 && "rounded-l-full",
+                    i === metrics.maxIndex && "rounded-r-full",
+                    i === current ? "bg-ink" : "bg-ink/15 group-hover/seg:bg-ink/30",
+                  )}
+                />
+              </button>
             ))}
           </div>
         )}
@@ -96,7 +103,8 @@ function SliderArrow({
       aria-label={direction === "prev" ? "Өмнөх" : "Дараах"}
       disabled={disabled}
       onClick={onClick}
-      className="focus-ring flex items-center justify-center rounded border border-background bg-foreground p-3 transition-opacity duration-200 disabled:cursor-default disabled:opacity-40"
+      // Prägnanz: үл харагдах хүрээг хасч, булангийн радиусыг товчнуудтай нэгтгэв (rounded-button)
+      className="focus-ring flex items-center justify-center rounded-button bg-foreground p-3 transition-[opacity,background-color] duration-200 hover:bg-neutral-5 disabled:cursor-default disabled:bg-foreground disabled:opacity-40"
     >
       <Image
         src={direction === "prev" ? "/assets/arrow-back.svg" : "/assets/arrow-forward.svg"}

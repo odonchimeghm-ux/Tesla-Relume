@@ -89,25 +89,27 @@ export default async function Model3Page() {
         />
       </Section>
 
-      {/* Хамгийн хүртээмжтэй үнэ */}
-      <Section stack>
-        <CtaCard
-          tall
-          image={{ src: "/assets/model3/affordable.webp", alt: "Ойн дэргэд ачааны тээшээ нээсэн цагаан Model 3" }}
-        >
-          <SectionTitle
-            title="Хамгийн хүртээмжтэй үнэ"
-            description="Шилдэг бүх онцлогийг хамгийн хямд үнэтэй, цаг хугацааны турш эзэмших зардал нь хамгийн бага тээврийн хэрэгсэлдээ шингээв."
-          />
-          <Actions>
-            <Button href="#">Захиалах</Button>
-          </Actions>
-        </CtaCard>
-        <CardGrid>
-          {affordableCards.map((card, i) => (
-            <InfoCard key={i} {...card} />
-          ))}
-        </CardGrid>
+      {/* Хамгийн хүртээмжтэй үнэ — Proximity: карт ба холбогдох картууд 32px зайтай нэг бүлэг */}
+      <Section>
+        <div className="flex flex-col gap-8">
+          <CtaCard
+            tall
+            image={{ src: "/assets/model3/affordable.webp", alt: "Ойн дэргэд ачааны тээшээ нээсэн цагаан Model 3" }}
+          >
+            <SectionTitle
+              title="Хамгийн хүртээмжтэй үнэ"
+              description="Шилдэг бүх онцлогийг хамгийн хямд үнэтэй, цаг хугацааны турш эзэмших зардал нь хамгийн бага тээврийн хэрэгсэлдээ шингээв."
+            />
+            <Actions>
+              <Button href="#">Захиалах</Button>
+            </Actions>
+          </CtaCard>
+          <CardGrid>
+            {affordableCards.map((card, i) => (
+              <InfoCard key={i} {...card} />
+            ))}
+          </CardGrid>
+        </div>
       </Section>
 
       {/* Дотор засал */}
@@ -135,9 +137,10 @@ export default async function Model3Page() {
           title="Үргэлж холбогдсон"
           description="Tesla аппаар дамжуулан тээврийн хэрэгслээ хаанаас ч хянаж, удирдаарай."
         />
+        {/* Common Region + Similarity: онцлог бүр бусад онцлогийн картуудтай ижил цагаан картанд */}
         <CardGrid cols={4}>
           {appFeatures.map((f, i) => (
-            <Stat key={i} {...f} />
+            <InfoCard key={i} title={f.label} text={f.text} />
           ))}
         </CardGrid>
       </Section>

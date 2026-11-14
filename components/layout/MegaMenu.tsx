@@ -22,7 +22,11 @@ export const MegaMenu = forwardRef<HTMLDivElement, MegaMenuProps>(function MegaM
             <ul className="flex flex-col gap-4">
               {group.items.map((item) => (
                 <li key={item.title}>
-                  <Link href={item.href} className="group flex items-start gap-3 py-2">
+                  {/* Common Region: дүрс, гарчиг, тайлбар нэг дэвсгэр дотор — нэг холбоос гэдгийг харуулна */}
+                  <Link
+                    href={item.href}
+                    className="focus-ring group -mx-3 flex items-start gap-3 rounded-lg px-3 py-2 transition-colors duration-200 hover:bg-neutral-5"
+                  >
                     <Image src="/assets/relume-icon.svg" alt="" width={24} height={24} className="shrink-0" />
                     <span className="flex flex-col">
                       <strong className="text-regular font-semibold group-hover:underline">{item.title}</strong>

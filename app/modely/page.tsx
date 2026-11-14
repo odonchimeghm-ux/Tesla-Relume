@@ -129,35 +129,39 @@ export default async function ModelYPage() {
         </CtaCard>
       </Section>
 
-      {/* Явах зай */}
-      <Section stack>
-        <CtaCard tall reverse image={{ src: "/assets/modely/range.webp", alt: "Model Y-ийн явах зай" }}>
-          <SectionTitle
-            tagline="Явах зай"
-            title="Танд хэрэгтэй бүх зай"
-            description="Нэг цэнэглэлтээр EPA тооцоогоор 321 миль хүртэл хаана ч хүрээрэй. Урт аялалд Trip Planner-ээр замаа төлөвлөхөд Tesla тань замдаа Supercharger-ийн зогсоолуудыг автоматаар нэмнэ."
-          />
-        </CtaCard>
-        <CardGrid>
-          {rangeStats.map((s, i) => (
-            <Stat key={i} {...s} />
-          ))}
-        </CardGrid>
+      {/* Явах зай — Proximity: карт ба түүний үзүүлэлтүүд 32px зайтай нэг бүлэг */}
+      <Section>
+        <div className="flex flex-col gap-8">
+          <CtaCard tall reverse image={{ src: "/assets/modely/range.webp", alt: "Model Y-ийн явах зай" }}>
+            <SectionTitle
+              tagline="Явах зай"
+              title="Танд хэрэгтэй бүх зай"
+              description="Нэг цэнэглэлтээр EPA тооцоогоор 321 миль хүртэл хаана ч хүрээрэй. Урт аялалд Trip Planner-ээр замаа төлөвлөхөд Tesla тань замдаа Supercharger-ийн зогсоолуудыг автоматаар нэмнэ."
+            />
+          </CtaCard>
+          <CardGrid>
+            {rangeStats.map((s, i) => (
+              <Stat key={i} {...s} />
+            ))}
+          </CardGrid>
+        </div>
       </Section>
 
-      {/* Бензин машинаас хямд */}
-      <Section stack>
-        <CtaCard tall image={{ src: "/assets/modely/affordable.webp", alt: "Model Y" }}>
-          <SectionTitle
-            title="Бензин машинаас хямд"
-            description="Хаана ч хялбар, хямд цэнэглэхээс эхлээд маш бага засвар үйлчилгээ хүртэл — Model Y-г эзэмших нь ижил төстэй бензин машинаас ихэвчлэн хямд байдаг."
-          />
-        </CtaCard>
-        <CardGrid>
-          {affordableCards.map((card, i) => (
-            <InfoCard key={i} {...card} />
-          ))}
-        </CardGrid>
+      {/* Бензин машинаас хямд — Proximity: карт ба холбогдох картууд нэг бүлэг */}
+      <Section>
+        <div className="flex flex-col gap-8">
+          <CtaCard tall image={{ src: "/assets/modely/affordable.webp", alt: "Model Y" }}>
+            <SectionTitle
+              title="Бензин машинаас хямд"
+              description="Хаана ч хялбар, хямд цэнэглэхээс эхлээд маш бага засвар үйлчилгээ хүртэл — Model Y-г эзэмших нь ижил төстэй бензин машинаас ихэвчлэн хямд байдаг."
+            />
+          </CtaCard>
+          <CardGrid>
+            {affordableCards.map((card, i) => (
+              <InfoCard key={i} {...card} />
+            ))}
+          </CardGrid>
+        </div>
       </Section>
 
       {/* Tesla апп */}
@@ -168,9 +172,10 @@ export default async function ModelYPage() {
           title="Хэзээ ч алсаас хандах"
           description="Утсаа түлхүүр болгон ашиглахаас гадна Tesla аппаар тээврийн хэрэгслээ урьдчилан бэлтгэх, нэвтрэх, хянах боломжтой."
         />
+        {/* Common Region + Similarity: онцлог бүр бусад онцлогийн картуудтай ижил цагаан картанд */}
         <CardGrid cols={4}>
           {appFeatures.map((f, i) => (
-            <Stat key={i} {...f} />
+            <InfoCard key={i} title={f.label} text={f.text} />
           ))}
         </CardGrid>
       </Section>

@@ -23,7 +23,7 @@ export default async function HomePage() {
       <Hero
         image="/assets/hero.png"
         title="Model 3"
-        description="Тэрээр Гольфстримийн урсгалд ганцаараа завиар загасчилдаг өвгөн байсан бөгөөд наян дөрвөн өдрийн турш нэг ч загас бариагүй явлаа."
+        description="Цахилгаан спорт седан. Нэг цэнэглэлтээр 363 миль хүртэл."
         actions={
           <>
             <Button href="#">Захиалах</Button>

@@ -43,9 +43,10 @@ export function ChargeSection() {
           </div>
         </div>
 
-        <Actions>
+        {/* Similarity: "Дэлгэрэнгүй" нь сайт даяар link (сумтай) хэлбэртэй */}
+        <Actions gap="lg">
           <Button href="#">Сүлжээг үзэх</Button>
-          <Button href="#" variant="secondary">
+          <Button href="#" variant="link">
             Дэлгэрэнгүй
           </Button>
         </Actions>

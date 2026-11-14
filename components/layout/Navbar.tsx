@@ -85,11 +85,12 @@ export function Navbar() {
             </button>
           </nav>
         </div>
+        {/* Similarity: "Захиалах" нь бүх хуудсанд primary, "Цаг авах" нь secondary — Hero-той ижил */}
         <div className="flex items-center gap-4 max-md:gap-2">
-          <Button href="#" variant="secondary" size="sm">
+          <Button href="#" variant="primary" size="sm">
             Захиалах
           </Button>
-          <Button href="#" variant="primary" size="sm">
+          <Button href="#" variant="secondary" size="sm">
             Цаг авах
           </Button>
         </div>
